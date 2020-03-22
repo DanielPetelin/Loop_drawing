@@ -1,9 +1,16 @@
 var out = '';
+var q = 3;
 
-for (var i = 0; i < 8; i++) {
+for (var i = 0; i < 4; i++) {
     for (var k = 0; k < 8; k++) {
-        out += '* ';
+        if (k < q) {
+            // out += '_';
+            out += '&nbsp;&nbsp;';
+        } else {
+            out += '* ';  
+        }
     };
+    q--;
     out += '<br>';
 };
 
